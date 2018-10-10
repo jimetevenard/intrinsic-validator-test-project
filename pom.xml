@@ -43,19 +43,12 @@
             <version>1.0.0</version>
           </dependency>
 
-          <!-- recent Jing for ISO schematron -->
           <dependency>
-            <groupId>eu.els.oss</groupId>
+            <groupId>com.thaiopensource</groupId>
             <artifactId>jing</artifactId>
-            <version>20180404</version>
+            <version>20091111</version>
           </dependency>
 
-          <!-- needed by ELS's Jing -->
-          <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.3.1</version>
-          </dependency>
 
           <!-- for ISO schematron -->
           <dependency>
@@ -87,7 +80,14 @@
                   Comment the <exclude> below to see the build fail.
                 -->
                 <exclude>invalid-*.xml</exclude>
-
+                
+                <!-- 
+                  The version of jing publicly available on Maven Central
+                  does not handle ISO schematron.
+                  
+                  see : https://github.com/ELSGestion/jing-trang
+                -->
+                <exclude>*ISO.xml</exclude>
               </excludes>
               <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
             </validationSet>

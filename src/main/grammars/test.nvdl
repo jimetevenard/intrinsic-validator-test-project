@@ -3,7 +3,7 @@
     xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
     
     <namespace ns="http://exemple.com/foo">
-        <validate schema="nvdl-ref-test.sch"></validate>
+        <allow></allow>
     </namespace>
     
     <namespace ns="http://exemple.com/counter">
