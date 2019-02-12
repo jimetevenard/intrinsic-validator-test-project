@@ -86,7 +86,11 @@
                 <!-- 
                   Comment the <exclude> below to see the build fail.
                 -->
+                <!--
+                Ok, commented.
                 <exclude>invalid-*.xml</exclude>
+                -->
+                
 
               </excludes>
               <schemaLanguage>http://componentcorp.com/xml/ns/xml-model/1.0</schemaLanguage>
